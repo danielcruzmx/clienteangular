@@ -1,0 +1,22 @@
+<table class="table table-bordered table-striped tabla">
+  <thead>
+    <tr class="filters">
+      <th>Fecha</th>
+      <th>Tipo</th>
+      <th>Descripcion</th>
+      <th>Cargo</th>
+      <th>Abono</th>
+      <th>Saldo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ movimiento.fecha }}</td>
+      <td>{{ movimiento.tipo }}</td>
+      <td>{{ movimiento.descripcion }}</td>
+      <td>{{ movimiento.cargo | currency:'USD':true:'1.2-2'}}</td>
+      <td>{{ movimiento.abono | currency:'USD':true:'1.2-2' }}</td>
+      <td>{{ movimiento.saldo | currency:'USD':true:'1.2-2' }}</td>
+    </tr>
+  </tbody>
+</table>

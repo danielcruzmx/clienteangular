@@ -1,0 +1,24 @@
+<!-- form class="ui large form segment">
+  <h3 class="ui header">Agregar liga</h3>
+  <div class="field">
+    <label for="titulo">Titulo:</label>
+    <input name="titulo" #newtitulo>
+  </div>
+  <div class="field">
+    <label for="link">Enlace:</label>
+    <input name="link" #newlink>
+  </div>
+
+  <button (click)="addOption(newtitulo, newlink)"
+            class="ui positive right floated button">
+      Enviar
+  </button>
+
+</form -->
+
+<div class="ui grid post">
+  <app-opcion
+     *ngFor="let opcion of opciones"
+       [opcion]="opcion">
+  </app-opcion>
+</div>

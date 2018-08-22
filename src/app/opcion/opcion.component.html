@@ -1,0 +1,18 @@
+<div class="four wide column center aligned votes">
+  <div class="ui statistic">
+    <div class="value">
+      {{ opcion.logo}}
+    </div>
+    <div class="label">
+      {{ opcion.nombre  }}
+    </div>
+  </div>
+</div>
+<div class="twelve wide column">
+  <a class="ui large header" href="{{ opcion.link }}" target="_blank">
+    {{ opcion.titulo }}
+  </a>
+  <div class="meta">
+    ({{ opcion.domain() }})
+  </div>
+</div>
