@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { ViewmodeloComponent } from './viewmodelo/viewmodelo.component';
 import { HeaderComponent } from './reportemovimientos/header.component';
 import { OpcionComponent } from './opcion/opcion.component';
-
+import { OpcionesService } from 'app/servicios/opciones.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { OpcionComponent } from './opcion/opcion.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [OpcionesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
