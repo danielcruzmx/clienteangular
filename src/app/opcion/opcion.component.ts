@@ -12,6 +12,7 @@ export class OpcionComponent implements OnInit {
   @Input() opcion: Opcion;
 
   constructor() {
+    //console.log(opcion.titulo);
   }
 
   ngOnInit() {
